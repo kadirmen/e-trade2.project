@@ -1,13 +1,25 @@
 # Daimoğlu Cam Web Sitesi | Daimoğlu Glass Website
 
-[https://daimoglucam.com.tr](https://daimoglucam.com.tr)
+🌐 [https://daimoglucam.com.tr](https://daimoglucam.com.tr)
 
-## 🖼️ Uygulama Önizlemesi
+---
 
-### Anasayfa Görseli
+## 🖼️ Uygulama Önizlemesi / Application Preview
+
+### 💻 Web Görünümü (Masaüstü) / Desktop View
+
+**TR:** Anasayfa masaüstü görünümü  
+**EN:** Homepage in desktop layout
+
 ![Homepage Preview](running-application-image/Screenshot%202025-04-22%20at%2015.26.28.png)
 
-### Hizmetler Sayfası
+---
+
+### 📱 Mobil Görünüm / Mobile View
+
+**TR:** Mobil cihazda web sitesi görünümü  
+**EN:** Website preview on mobile device
+
 ![Mobile Preview](running-application-image/Screenshot%202025-04-22%20at%2015.30.31.png)
 
 ---
@@ -32,8 +44,6 @@ Bu proje, **Kayseri merkezli Daimoğlu Cam** firmasının web sitesidir. Statik 
 - Google Site Verification ve Sitemap
 
 ---
-
-[https://daimoglucam.com.tr](https://daimoglucam.com.tr)
 
 ## 🌍 EN: About the Project
 This project is a static website built for **Daimoğlu Glass**, a company based in Kayseri, Turkey. The goal is to present their services such as glass balconies, sliding glass systems, and decorative mirrors using a responsive and elegant design.
@@ -69,5 +79,8 @@ This project is a static website built for **Daimoğlu Glass**, a company based 
 │   ├── favicon.png
 │   ├── WhatsApp_icon.png
 │   └── hizmet[1-9].jpg
+├── running-application-image/
+│   ├── Screenshot 2025-04-22 at 15.26.28.png
+│   └── Screenshot 2025-04-22 at 15.30.31.png
 ├── sitemap.xml
 └── robots.txt
