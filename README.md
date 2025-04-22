@@ -20,7 +20,9 @@
 **TR:** Mobil cihazda web sitesi görünümü  
 **EN:** Website preview on mobile device
 
-![Mobile Preview](running-application-image/Screenshot%202025-04-22%20at%2015.30.31.png)
+![Mobile Preview](running-application-image/Screenshot%202025-04-22%20at%2015.25.12.png)
+
+---
 
 ---
 
