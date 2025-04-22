@@ -62,3 +62,5 @@ This project is a static website built for **Daimoğlu Glass**, a company based 
 │   └── hizmet[1-9].jpg
 ├── sitemap.xml
 └── robots.txt
+![Screenshot 2025-04-22 at 15 25 12](https://github.com/user-attachments/assets/7d5eec0a-307a-45ca-887e-e2860f885292)
+![Screenshot 2025-04-22 at 15 26 28](https://github.com/user-attachments/assets/fa737b96-f121-424e-b438-99d2e7342f19)
