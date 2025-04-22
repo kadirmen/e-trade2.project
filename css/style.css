@@ -1,0 +1,657 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #222;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 0;
+  display: block;
+}
+
+nav a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #00eaff;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 5px #00eaff;
+}
+
+nav a:hover {
+  color: #00eaff;
+  text-shadow: 0 0 8px #00eaff;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+
+#contact {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+#contact h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.info-item i {
+  font-size: 20px;
+  color: #e60023;
+  min-width: 25px;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.info-item a,
+.info-item span {
+  color: #444;
+  font-size: 18px;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+
+
+.section {
+  min-height: 100vh;
+  padding-top: 60px; /* Navbar yüksekliği */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#home {
+  background: url('../assets/background.jpg') no-repeat center center/cover;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+  font-size: 40px;
+
+  /* Bu ikisi içeriği yukarı taşır */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* yazıları üstte tut */
+  padding-top: 150px; /* Navbar yüksekliği kadar boşluk */
+  padding-bottom: 20px;
+}
+
+
+
+
+#about {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: #bbdbe1 !important;
+}
+
+#about img {
+  margin: 0px auto 0 !important;
+  display: block !important;
+  padding: 0 !important;
+}
+
+#about h2 {
+  margin: 10px 0 !important;
+  padding: 0 !important;
+}
+
+#about p {
+  margin: 0 auto 20px !important;
+  padding: 0 30px !important;  /* Sağ ve sol boşluk verildi */
+  text-align: left;
+  line-height: 1.6;
+  max-width: 1000px;           /* Yazı çok uzun olmasın */
+}
+
+
+
+.logo-wrapper {
+  height: 200px; /* Daha küçük görünür alan */
+  overflow: hidden; /* Taşan kısmı gizler */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.logo-wrapper img {
+  transform: translateY(-40px); /* Yukarı kaydırır */
+}
+
+
+.logo-big {
+  width: 550px; /* Görsel daha büyük */
+  height: auto;
+}
+
+
+#services {
+  background: #ffffff;
+  padding-top: 60px; /* Navbar kadar boşluk bırakır */
+
+}
+
+
+
+#contact {
+  background: #cbc6c6;
+}
+
+h1, h2 {
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.logo img {
+  width: 200px;
+  height: auto;
+  animation: glow 2.5s infinite ease-in-out;
+  margin-top: 10px; /* İstediğin kadar aşağı inmesi için değeri artırabilirsin */
+
+}
+
+/* Daha yumuşak ve pürüzsüz beyaz parlama */
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 1px #ffffff);
+  }
+  50% {
+    filter: drop-shadow(0 0 1.1px #000000) drop-shadow(0 0 1.5px #000000);
+  }
+}
+
+
+
+
+
+
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25D366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background: #ffa500;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #222;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+}
+
+/* Dikey Navigasyon */
+.side-nav {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1002;
+}
+
+.dot {
+  width: 4px;
+  height: 30px;
+  background-color: #aaa;
+  display: block;
+  border-radius: 2px;
+  transition: background-color 0.3s, height 0.3s;
+}
+
+.dot.active {
+  background-color: white;
+  height: 40px;
+}
+/* Başlangıç pozisyonu ve animasyon */
+/* Üstteki başlık yazılar */
+
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-delayed {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+h1.slide-in {
+  font-size: 70px;
+  color: #00eaff;
+  -webkit-text-stroke: 2px black;
+  text-stroke: 2px black;
+  text-shadow:
+    0 0 10px rgba(0, 0, 0, 0.5),
+    0 0 15px rgba(0, 234, 255, 0.3);
+  font-weight: 800;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+
+
+/* Alt açıklama yazısı */
+.hero-subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: #00eaff;
+  -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+  opacity: 0;
+  animation: slideInLeft 1.3s ease-out forwards; /* biraz gecikmeli */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-box {
+  width: 300px;
+  height: 400px; /* Sabit yükseklik veriyoruz */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.service-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Taşsa bile oranı bozmadan içeri sığdırır */
+  display: block;
+}
+
+.service-box:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-top: 15px;
+  }
+
+  .logo img {
+    height: 300px;
+    margin-top: 0px;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    top: 15px;
+    right: 3px;
+    
+  }
+
+  #nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1001;
+    padding: 10px 0; /* 👈 Daha yukarıda başlasın */
+  }
+
+  #nav-list.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 3px 0; /* 👈 Aralıkları biraz daha daralt */
+  }
+
+  nav a {
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #00eaff; /* 👈 Açık mavi renk */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(0, 234, 255, 0.3); /* 👈 Daha belirgin mavi çizgi */
+  }
+
+  nav a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 6px #00eaff;
+    transform: scale(1.03);
+    border-bottom: 1px solid #00eaff; /* Hover'da daha da net çizgi */
+  }
+
+
+  h1, h2 {
+    font-size: 24px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  #home h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    
+  }
+
+  #home {
+    padding-top: 150px;
+    padding-bottom: 20px;
+    
+  }
+
+  #home p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 0;
+    padding-top: 20px;
+
+  }
+  
+
+  #about {
+      padding-top: 60px !important;
+    }
+  
+  
+
+
+
+  .service-box {
+    width: 90%;
+  }
+
+  h2 {
+    margin-top: 50px;
+  }
+
+  .side-nav {
+    right: 10px;
+  }
+
+  
+
+
+
+    #contact {
+      padding-top: 10px; /* 👈 yukarı taşır */
+      padding-bottom: 20px;
+    }
+  
+    #contact h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+  
+    .contact-info {
+      margin-top: 0;
+    }
+  
+  
+
+  .info-item a,
+  .info-item span {
+    font-size: 16px;
+  }
+
+  .info-item i {
+    font-size: 18px;
+  }
+
+
+  .logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px; /* Daha küçük bir yükseklik */
+    overflow: hidden;
+  }
+
+  .logo-wrapper img {
+    width: 300px; /* Genişliği küçült */
+    height: auto;
+    transform: translateY(-20px); /* Yukarı taşı, ihtiyaca göre değiştir */
+  }
+}
+
+    
+  
+  
+
+  
+
+@media (min-width: 701px) {
+  #services {
+    padding-top: 90px; /* Masaüstünde biraz daha aşağıdan başlasın */
+  }
+
+
+}
+@media (max-width: 700px) {
+  #about img {
+    display: none !important;
+  }
+}
+
+@media (max-width: 700px) {
+  #about {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+}
